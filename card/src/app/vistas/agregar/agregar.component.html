@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="cont">
+      <h1>Agregar Productos</h1>
+      <div class="form-group">
+        <label for="titulo">Título:</label>
+        <input type="text" class="form-control" [formControl]="titulo" />
+      </div>
+      <div class="form-group">
+        <label for="precio">Precio:</label>
+        <input type="number" class="form-control" [formControl]="precio" />
+      </div>
+      <div class="form-group">
+        <label for="descripcion">Descripción:</label>
+        <textarea class="form-control" [formControl]="descripcion"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="categoriaId">Categoría ID:</label>
+        <input type="number" class="form-control" [formControl]="categoria" />
+      </div>
+      <div class="form-group">
+        <label for="imagen">Imagen:</label>
+        <input type="text" class="form-control" [formControl]="imagen" />
+      </div>
+      <button class="btn btn-primary" (click)="onSubmit()">Guardar</button>
+      <button type="button" class="btn btn-dark" (click)="salir()">Salir</button>
+    </div>
+  </div>

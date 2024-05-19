@@ -1,0 +1,22 @@
+<div class="card-content">
+    <div class="card-img">
+      <img
+        [src]="producto.images"
+        alt=""
+      />
+      <span>
+        <h4>{{ producto.category.name }}</h4>
+      </span>
+    </div>
+    <div class="card-desc">
+      <h3>{{ producto.title }} ${{ producto.price }}</h3>
+      <p>{{ producto.description }}</p>
+      <button type="button" class="btn btn-primary" (click)="edit(producto.id)">
+        Editar
+      </button>
+      <button type="button" class="btn btn-danger" (click)="delete(producto.id)">
+        Eliminar
+      </button>
+    </div>
+  </div>
+  <br />

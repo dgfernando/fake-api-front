@@ -1,0 +1,19 @@
+<section class="details-card" id="productos">
+    <header class="header" style="position: relative; text-align: center;">
+        <a>
+          <img src="https://images.unsplash.com/photo-1606166325683-e6deb697d301?q=80&w=1485&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Enlace Sensacional" class="header-image" />
+          <h3 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color:#ffffff; margin: 0; padding: 0;">Tienda Lol</h3>
+        </a>
+      </header>
+    <div class="container">
+      <hr />
+      <button type="button" class="btn btn-success" (click)="addProduct()">Agregar producto</button>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-md-4" *ngFor="let product of products">
+          <app-card [producto]="product"></app-card>
+        </div>
+      </div>
+    </div>
+  </section>
