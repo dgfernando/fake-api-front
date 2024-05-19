@@ -59,29 +59,29 @@ body {
   flex: 1 1 calc(33.333% - 20px);
   box-sizing: border-box;
 }
-/* Button Styles */
+
 .btn-success {
     display: block;
-    width: 200px; /* Ancho fijo para el botón */
-    margin: 0 auto 20px auto; /* Centra el botón horizontalmente y añade un margen inferior */
-    padding: 10px 20px; /* Espaciado interno del botón */
-    font-size: 1em; /* Tamaño de la fuente */
-    font-weight: bold; /* Negrita para el texto del botón */
-    color: white; /* Color del texto */
-    background-color: #28a745; /* Color de fondo del botón */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cursor en forma de mano para indicar que es clicable */
-    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves para el fondo y transformación */
+    width: 200px;
+    margin: 0 auto 20px auto;
+    padding: 10px 20px; 
+    font-size: 1em;
+    font-weight: bold; 
+    color: white; 
+    background-color: #007bff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s; 
   }
   
   .btn-success:hover {
-    background-color: #218838; /* Color de fondo al pasar el cursor */
-    transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón al pasar el cursor */
+    background-color:#0056b3; 
+    transform: scale(1.05); 
   }
   
   .btn-success:active {
-    background-color: #1e7e34; /* Color de fondo cuando el botón es presionado */
-    transform: scale(1); /* Restablece el tamaño del botón al ser presionado */
+    background-color:#0056b3;
+    transform: scale(1); 
   }
   

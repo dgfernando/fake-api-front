@@ -2,14 +2,14 @@
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f8f9fa; /* Color de fondo del contenedor del formulario */
+    background-color: #f8f9fa; 
   }
   
   .editar-form {
-    background-color: #ffffff; /* Color de fondo del formulario */
+    background-color: #ffffff;
     padding: 20px;
-    border-radius: 10px; /* Bordes redondeados para el formulario */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor del formulario */
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
   }
   
   .editar-form h1 {
@@ -27,39 +27,39 @@
   
   .form-control {
     width: 100%;
-    max-width: 400px; /* Ajusta el ancho máximo del campo de entrada */
+    max-width: 400px; 
     padding: 10px;
-    border: 1px solid #ced4da; /* Color del borde del campo de entrada */
-    border-radius: 5px; /* Bordes redondeados para el campo de entrada */
+    border: 1px solid #ced4da; 
+    border-radius: 5px; 
   }
   
   .btn {
-    padding: 10px 20px; /* Espaciado interno del botón */
-    border-radius: 5px; /* Bordes redondeados del botón */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    display: block; /* Asegurar que los botones se muestren en una línea diferente */
-    width: 100%; /* Ancho completo del botón */
-    max-width: 200px; /* Ancho máximo del botón */
-    margin: 0 auto; /* Centrar el botón */
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    display: block; 
+    width: 100%; 
+    max-width: 200px; 
+    margin: 0 auto; 
   }
   
   .btn-primary {
-    background-color: #007bff; /* Color de fondo del botón primario */
-    border: none; /* Sin borde */
-    color: #ffffff; /* Color del texto del botón primario */
+    background-color: #007bff; 
+    border: none; 
+    color: #ffffff; 
   }
   
   .btn-primary:hover {
-    background-color: #0056b3; /* Cambio de color de fondo al pasar el cursor sobre el botón primario */
+    background-color: #0056b3; 
   }
   
   .btn-dark {
-    background-color: #343a40; /* Color de fondo del botón oscuro */
-    border: none; /* Sin borde */
-    color: #ffffff; /* Color del texto del botón oscuro */
+    background-color: #343a40; 
+    border: none; 
+    color: #ffffff; 
   }
   
   .btn-dark:hover {
-    background-color: #23272b; /* Cambio de color de fondo al pasar el cursor sobre el botón oscuro */
+    background-color: #23272b; 
   }
  
