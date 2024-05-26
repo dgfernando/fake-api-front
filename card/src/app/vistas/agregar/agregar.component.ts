@@ -27,7 +27,7 @@ export class AgregarComponent {
       title: this.titulo.value,
       price: this.precio.value,
       description: this.descripcion.value,
-      categoryId: this.categoria.value,
+      category: this.categoria.value,
       images: [this.imagen.value]
     }
 

@@ -19,7 +19,7 @@ export class InicioComponent {
 
   ngOnInit() {
     this.api.getProducts().subscribe((data: any) => {
-      data.map((item: any) => {
+      /* data.map((item: any) => {
 
 
         let imageStringify = JSON.stringify(item.images); // convertimos el array de imagenes a string
@@ -55,8 +55,9 @@ export class InicioComponent {
         } catch (e) {}
         
         
-        });
-      this.products = data;
+        }); */
+      this.products = data.results;
+      console.log(this.products);
     });
   }
 

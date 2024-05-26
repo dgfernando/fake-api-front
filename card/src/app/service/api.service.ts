@@ -8,7 +8,8 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-   URL = "https://api.escuelajs.co/api/v1/products";
+  //  URL = "https://api.escuelajs.co/api/v1/products";
+      URL = 'http://localhost:3000/products';
 
   getProducts(){
     return this.http.get(this.URL);

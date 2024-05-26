@@ -22,33 +22,36 @@ export class EditarComponent {
   info: any;
 
   editForm = new FormGroup({
-  id: new FormControl(''),
-  title: new FormControl(''),
-  price: new FormControl(''),
-  description: new FormControl(''),
-  images: new FormControl(''),
+    id: new FormControl(''),
+    title: new FormControl(''),
+    price: new FormControl(''),
+    description: new FormControl(''),
+    category: new FormControl(''),
+    images: new FormControl(''),
   });
 
   ngOnInit() {
     let productoId = this.route.snapshot.paramMap.get('id');
     this.api.getProduct(productoId).subscribe((data: any) => {
       this.editForm.setValue({
-        id: data.id,
-        title: data.title,
-        price: data.price,
-        description: data.description,
-        images: data.images[0],
+        id: data.results[0].id,
+        title: data.results[0].title,
+        price: data.results[0].price,
+        description: data.results[0].description,
+        category: data.results[0].category,
+        images: data.results[0].images,
       });
     });
   }
 
-  onSubmit(form:any) {  
+  onSubmit(form: any) {
     const producto = {
       id: this.editForm.value.id,
       title: form.title,
       price: form.price,
       description: form.description,
-      images: [form.images],
+      category: this.editForm.value.category,
+      images: form.images,
     };
 
     this.api.putProduct(producto).subscribe((data: any) => {
@@ -56,7 +59,6 @@ export class EditarComponent {
       this.salir();
     });
   }
-    
 
   salir() {
     this.router.navigate(['']);
